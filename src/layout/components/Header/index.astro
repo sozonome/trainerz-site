@@ -5,21 +5,23 @@ import googlePlayImage from './images/google-play.svg';
 import appStoreImage from './images/app-store.svg';
 ---
 
-<header class="py-3 px-5 md:px-[1.875rem] flex items-center">
-  <h1 class="text-2xl">Trainerz</h1>
+<header class="sticky top-0 bg-white shadow-sm z-10">
+  <div class="page-section py-3 flex items-center">
+    <h1 class="text-2xl">Trainerz</h1>
 
-  <div class="scale-[.8] md:scale-100 ml-auto flex items-center gap-2">
-    <Image
-      class="py-2 px-4 bg-black rounded-md"
-      alt="Google Play"
-      src={googlePlayImage}
-      height={32}
-    />
-    <Image
-      class="py-2 px-4 bg-black rounded-md"
-      alt="App Store"
-      src={appStoreImage}
-      height={32}
-    />
+    <div class="scale-[.8] md:scale-100 ml-auto flex items-center gap-2">
+      <Image
+        class="py-2 px-4 bg-black rounded-md"
+        alt="Google Play"
+        src={googlePlayImage}
+        height={32}
+      />
+      <Image
+        class="py-2 px-4 bg-black rounded-md"
+        alt="App Store"
+        src={appStoreImage}
+        height={32}
+      />
+    </div>
   </div>
 </header>

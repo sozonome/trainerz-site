@@ -42,6 +42,6 @@
   }
 
   .page-section {
-    @apply p-[1.875rem] md:p-0 mx-auto max-w-[600px];
+    @apply px-[1.875rem] py-5 md:px-0 mx-auto max-w-[600px];
   }
 }

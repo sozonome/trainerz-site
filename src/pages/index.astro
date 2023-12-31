@@ -1,9 +1,23 @@
 ---
+import { Image } from 'astro:assets';
 import RootLayout from '@/layout/RootLayout.astro';
+
+import heroImage from './images/hero-image.png';
 ---
 
 <RootLayout>
-  <section class="page-section">
-    <h1>Start to workout</h1>
+  <section class="page-section md:flex items-center my-[4.5rem] md:my-12">
+    <div class="flex flex-col items-center text-center md:text-start md:items-start gap-8">
+      <h1>Start to workout</h1>
+      <p>
+        This is a template Figma file, turned into code using Anima. Learn more
+        at AnimaApp.com
+      </p>
+
+      <button class="py-2 px-6 bg-primary text-white rounded-xl"
+        >Get Started</button
+      >
+    </div>
+    <Image alt="trainerz" src={heroImage} />
   </section>
 </RootLayout>
