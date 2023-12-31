@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+
+import behanceLogo from './images/behance.svg';
+import instagramLogo from './images/instagram.svg';
+import facebookLogo from './images/facebook.svg';
+import dribbbleLogo from './images/dribbble.svg';
+import discordLogo from './images/discord.svg';
+---
+<hr class="mx-[1.875rem] md:mx-16" />
+<footer
+  class="p-[1.875rem] md:px-[3.125rem] flex flex-col items-start md:flex-row gap-8 md:justify-between"
+>
+  <div class="flex flex-col items-start gap-9">
+    <h2 class="text-2xl">Trainerz</h2>
+    <div>
+      <label class="text-neutral-400">Subscribe to our newsletter</label>
+      <div class="px-4 py-2 bg-zinc-100 rounded-xl">
+        <input
+          type="email"
+          class="bg-transparent"
+          placeholder="Enter your email"
+        />
+        <button class="text-orange-400">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-start gap-8 h-[100%] md:justify-between md:items-end">
+    <div class="flex items-center gap-3">
+      <Image src={discordLogo} alt="Discord" />
+      <Image src={facebookLogo} alt="Facebook" />
+      <Image src={dribbbleLogo} alt="Dribbble" />
+      <Image src={instagramLogo} alt="Instagram" />
+      <Image src={behanceLogo} alt="Behance" />
+    </div>
+    <div class="flex items-center gap-5 text-sm">
+      <a>Privacy policy</a>
+      <a>Cookies Policy</a>
+      <p>&copy; Trainers 2022</p>
+    </div>
+  </div>
+</footer>
